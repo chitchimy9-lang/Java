@@ -1,8 +1,5 @@
 package co.istad.generic;
 
-import java.math.BigDecimal;
-
-
 public class Student extends Person {
 
     private Double score;
@@ -22,4 +19,4 @@ public class Student extends Person {
 }
 
 
-}
+
