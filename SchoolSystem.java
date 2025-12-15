@@ -10,15 +10,14 @@ public class SchoolSystem {
         Person student = new Student(
                 "DARA",
                 "Female",
-                168,
-                new BigDecimal("90"),
+                168f,
                 98.0
         );
 
         Person teacher = new Teacher(
                 "KOKO",
                 "Male",
-                175.,
+                175f,
                 new BigDecimal("1500")
         );
 
@@ -34,15 +33,14 @@ public class SchoolSystem {
             System.out.println("Gender : " + person.getGender());
             System.out.println("Height : " + person.getHeight());
 
-            if (person instanceof Student obj) {
-                System.out.println("Score  : " + obj.getScore());
-            } else if (person instanceof Teacher obj) {
-                System.out.println("Salary : " + obj.getSalary());
-            } else {
-                System.out.println("Invalid information...!");
+            if (person instanceof Student s) {
+                System.out.println("Score  : " + s.getScore());
+            } else if (person instanceof Teacher t) {
+                System.out.println("Salary : " + t.getSalary());
             }
 
             System.out.println("--------------------------");
         });
     }
 }
+
